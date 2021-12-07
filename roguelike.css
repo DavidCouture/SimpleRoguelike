@@ -1,0 +1,92 @@
+html {
+    font-family: 'Courier New', Courier, monospace;
+    padding: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+h1 {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+section {
+    display: inline-block;
+    vertical-align: top;
+}
+
+div {
+    margin: 5px;
+    display: block;
+}
+
+ul {
+    list-style: none;
+    padding-left: 10px;
+}
+
+form {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+}
+
+.intro {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 500px;
+    border: 1px dashed black;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.gameLegend {
+    width: 43%;
+    border: 1px dashed black;
+}
+
+.enemiesLegend {
+    width: 48%;
+    border: 1px dashed black;
+    vertical-align: top;
+}
+
+.legendList {
+    text-align: left;
+    padding-left: 15px;
+}
+
+.statsBoard {
+    width: 100%;
+    margin-left: 0;
+    border: 1px dashed black;
+}
+
+.battleNotes {
+    margin-left: 10px;
+    width: 500px;
+}
+
+.infoBoard {
+    width: 100%;
+    margin: 0;
+    border: 1px dashed black;
+}
+
+.commands {
+    width: 400px;
+    border: 1px dashed black;
+}
+
+.dispInlineBlock {
+    display: inline-block;
+}
+
+.gameNotes {
+    margin-left: 10px;
+    width: 500px;
+}

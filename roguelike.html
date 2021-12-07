@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RogueLike Game</title>
+    <link rel="stylesheet" href="roguelike.css">
+</head>
+<body>
+    <h1>RogueLike Adventure</h1>
+    <section class="gameArea">
+        <div class="gameboard intro">
+            <p>Welcome to the world of RogueLike Adventure! You are of the royal knights,
+                where you have been tasked by the King to retrieve a stolen treasure form
+                the depths of an old, forsaken dungeon. Countless dangers lie in front of 
+                you, but armed with your adventuring spirit and trusty blade, you set about
+                the task at hand...
+            </p>
+        </div>
+        <form id="newGameForm" class="intro">
+            <label for="numRows">Number of rows:</label>
+            <input type="number" id="numRows" name="numRows" placeholder="Rows for the game" value="12"></input> <br>
+            <label for="numCols">Number of columns:</label>
+            <input type="number" id="numCols" name="numCols" placeholder="Columns for the game" value="42"></input> <br>
+            <label for="numLevels">Number of levels:</label>
+            <input type="number" id="numLevels" name="numLevels" placeholder="Total levels for the game" value="2"></input> <br>
+            <button name="makeNewGame">New Game</button>
+        </form>
+        <form>
+            <button id="resetBtn" name="reset" class="hidden">Reset</button>
+        </form>
+        <div class="commands hidden">
+            <h3>Commands</h3>
+        </div>
+        <div class="gameLegend hidden">
+            <h3>Game Legend</h3>
+        </div>
+        <div class="enemiesLegend hidden">
+            <h3>Enemies Legend</h3>
+        </div>
+    </section>
+    <section class="infoArea">
+        <div class="statsBoard hidden">
+            <h3>Dungeon Info</h3>
+            <ul>
+                <li>Dungeon Level: <span class="levelDisplay"></span> of <span class="maxLevel"></span></li>
+                <li>Current Objective: <span class="playerObjective"></span></li>
+            </ul>
+            <h3>Player Info</h3>
+            <ul>
+                <li>Your Level: <span class="playerLevel">0</span></li>
+                <li>Your health: <span class="playerHealth">0</span> of <span class="maxHealth">0</span></li>
+                <li>Your weapon: <span class="playerWeapon"></span></li>
+                <li>Your attack: <span class="playerAttack">0</span></li>
+                <li>XP to next lvl: <span class="playerXPtoLevel">GayRights</span></li>
+            </ul>
+        </div>
+        <div class="infoBoard hidden">
+            <div class="gameInfo hidden">
+                <h3>Game Info</h3>
+                <p class="gameNotes"></p>
+            </div>
+            <div class="battleBoard hidden">
+                <h3>Battle Info</h3>
+                <p class="battleNotes"></p>
+                <ul class="battleInfo">
+                    <li>Enemy Stats: <span class="enemyName"></span></li>
+                    <ul>
+                        <li>Health: <span class="enemyHealth"></span></li>
+                        <li>Attack: <span class="enemyAttack"></span></li>
+                    </ul>
+                    <br>
+                    <li>Player Action:</li>
+                    <ul>
+                        <li class="playerAction"></li>
+                        <li class="playerResult"></li>
+                    </ul>
+                    <br>
+                    <li>Enemy Action:</li>
+                    <ul>
+                        <li class="enemyAction"></li>
+                        <li class="enemyResult"></li>
+                    </ul>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <script src="roguelikeVariables.js"></script>
+    <script src="battle.js"></script>
+    <script src="map.js"></script>
+    <script src="roguelike.js"></script>
+</body>
+</html>
